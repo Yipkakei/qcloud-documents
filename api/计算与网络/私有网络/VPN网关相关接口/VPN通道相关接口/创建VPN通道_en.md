@@ -17,8 +17,8 @@ The following request parameter list only provides API request parameters. Commo
 | preSharedKey | Yes | String | Pre-shared private key.  |
 | userGwCidrBlock.n | No | Array | CIDR address of the peer IP address range, multiple values can be entered. Specifies the IDC IP address range with which the VPC can communicate, later upgraded to spdAcl (finer granularity). Either userGwCidrBlock or spdAcl must be entered.  |
 | spdAcl | No | String | SPD rule group, json format. For example: `{"10.0.0.5/24":["172.123.10.5/16"]}`, `10.0.0.5/24` is a VPC private IP address range, and `172.123.10.5/16` is an IDC IP address range. You can specify which IP address range in the VPC can communicate with which IP address range in your IDC, upgraded from `userGwCidrBlock`. Either `userGwCidrBlock` or `spdAcl` must be entered.  |
-| IKESet | No | Array | IKE configuration (Internet Key Exchange). IKE is provided with a self-protection mechanism. The network security protocol is configured by the user. See <a href="https://cloud.tencent.com/doc/product/215/VPN%e8%bf%9e%e6%8e%a5#4.3-ike.E9.85.8D.E7.BD.AE" title="VPN Connection-IKE Configuration">VPN Connection-IKE Configuration</a> for details.  |
-| IPsecSet | No | Array | IPSec configuration. The IPSec secure session configuration is provided by Tencent Cloud. See <a href="https://cloud.tencent.com/doc/product/215/VPN%e8%bf%9e%e6%8e%a5#4.4-ipsec-.E4.BF.A1.E6.81.AF" title="VPN Connection-IPsec Configuration">VPN Connection-IPsec Configuration</a> for details. |
+| IKESet | No | Array | IKE configuration (Internet Key Exchange). IKE is provided with a self-protection mechanism. The network security protocol is configured by the user. See <a href="https://intl.cloud.tencent.com/document/product/1037/39635" title="VPN Connection-IKE Configuration">VPN Connection-IKE Configuration</a> for details.  |
+| IPsecSet | No | Array | IPSec configuration. The IPSec secure session configuration is provided by Tencent Cloud. See <a href="https://intl.cloud.tencent.com/document/product/1037/39635" title="VPN Connection-IPsec Configuration">VPN Connection-IPsec Configuration</a> for details. |
 
 **Details of `IKESet`**
 
